@@ -2946,7 +2946,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 7.5rem; }
+  height: 7.5rem; 
+}
+
   @media (min-width: 993px) {
     .o-nav {
       width: 50%; } }
@@ -2955,7 +2957,11 @@ a {
       width: 35%; } }
 
 .o-nav__logo {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
   display: block;
+  margin: auto;
   text-decoration: none;
   outline: 0; }
   .o-nav__logo img {
