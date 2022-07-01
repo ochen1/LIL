@@ -2896,7 +2896,11 @@ a {
 =                  Molecules                  =
 =============================================*/
 .m-nav-list {
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
   visibility: hidden;
+  text-align: center;
   opacity: 0; }
   @media (min-width: 993px) {
     .m-nav-list {
@@ -2905,6 +2909,7 @@ a {
 
 .m-nav-list__items__item {
   position: relative;
+  margin-top: 10%;
   display: inline-block;
   margin-right: 3.2rem; }
   .m-nav-list__items__item:last-child {
@@ -2937,16 +2942,13 @@ a {
 .o-nav {
   margin: 0 auto;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
   height: 7.5rem; 
+}
+
+#left {
+  text-align: center;
 }
 
   @media (min-width: 993px) {
