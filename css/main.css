@@ -2946,14 +2946,15 @@ a {
   .m-nav-list__items__item__link::before {
     content: "";
     position: absolute;
-	bottom: -0.8em;
-    left: 10%;
+    top: 30%;
+    left: -10%;
+    width: 0;
     height: 2px;
     background-color: #000000;
     -webkit-transition: width 0.3s ease-in-out;
     transition: width 0.3s ease-in-out; }
   .m-nav-list__items__item__link.is-active::before, .m-nav-list__items__item__link:hover::before {
-    width: 80%; }
+    width: 120%; }
 
 /*=============================================
 =                  Organisms                  =
