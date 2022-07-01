@@ -2896,7 +2896,7 @@ a {
   outline: 0;
   -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; }
-  .a-btn.is-active, .a-btn:hover {
+  .a-btn-inverse.is-active, .a-btn-inverse:hover {
     color: black;
     background-color: #EFE7D4; }
 
