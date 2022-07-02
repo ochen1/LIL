@@ -2919,17 +2919,24 @@ a {
   align-items: center;
   justify-content: center;
   vertical-align: middle;
-  visibility: hidden;
+  /* visibility: hidden; */
   text-align: center;
-  opacity: 0; }
+  /* opacity: 0; */ }
   @media (min-width: 993px) {
     .m-nav-list {
       visibility: visible;
       opacity: 1; } }
 
+      @media (max-width: 993px) {
+        .o-nav__logo {
+          display: none !important;}
+          .o-nav {
+            grid-template-columns: 2fr 1fr !important;
+          } }
+
 .m-nav-list__items__item {
   position: relative;
-  margin-top: 10%;
+  margin-top: 2.3rem;
   display: inline-block;
   margin-right: 3.2rem; }
   .m-nav-list__items__item:last-child {
