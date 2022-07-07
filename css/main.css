@@ -2900,6 +2900,10 @@ a {
     color: black;
     background-color: #EFE7D4; }
 
+#mob {
+  display: none;
+}
+
 /*=============================================
 =                 Checkboxes                  =
 =============================================*/
@@ -2930,11 +2934,14 @@ a {
       @media (max-width: 993px) {
         .o-nav__logo {
           display: none !important;}
-          .o-nav {
-            grid-template-columns: 2fr 1fr !important;
-          } .m-nav-list:last-of-type {
-            margin-right: 3rem;
-          }}
+          #comp {
+            display: none!important;  
+          }
+          #mob {
+            display: grid !important;
+            grid-template-columns: 1fr 1fr 1fr!important;
+          }
+        }
 
 .m-nav-list__items__item {
   position: relative;
