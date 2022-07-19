@@ -7,7 +7,7 @@
         <title>Leaders In Literacy | Competitions</title>
         <link rel='stylesheet' id='wp-block-library-css'  href='css/style.min.css' type='text/css' media='all' />
         <link rel='stylesheet' id='grizzly/css-css'  href='css/main.css' type='text/css' media='all' />
-        <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+        <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
     </head>
     <body class="home">
         <div class="l-loader js-loader">
@@ -118,7 +118,7 @@
                                 <h1 class="h1 o-two-columns-text__heading" style="margin: 0;">Leaders In Literacy</h1>
                             </div>
                             <div class="col-md-6 offset-xl-1">
-                                <p class="p1 o-two-columns-text__text"><span style="font-size: 3rem;"><b>Summer Writing<br>Competition 2022</b></span><br><span style="text-transform: uppercase;font-size: 1.5rem;">Calling writers from all over the world in grades 5-10:</span><br>&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;Submissions open on <u><b>July 8</b></u> and close on <u><b>August 15</b></u><br>&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;Three categories include <b>Personal Narrative</b>, <b>Original Poem</b>, and <b>Persuasive Essay</b><br>&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;Get a chance to win <b><u>prizes</u></b>!<br><br><span style="text-transform: uppercase;font-size: 1.5rem;">Not confident in your writing?</span><br>&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;We are holding a writing workshop virtually on <u><b>July 20th at 7PM!</b></u><br><br><br>Click below to learn important details!<br><br><a href="https://docs.google.com/presentation/d/1A6im8yvSVC5uIo4PwvoXVp6sKRteR4NBTP0wCPPtXU8" target="_blank" class="a-btn-inverse">Information Slides</a></p1>
+                                <p class="p1 o-two-columns-text__text"><span style="font-size: 3rem;"><b>Summer Writing<br>Competition 2022</b></span><br><span style="text-transform: uppercase;font-size: 1.5rem;">Calling writers from all over the world in grades 5-10:</span><br>&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;Submissions open on <u><b>July 8</b></u> and close on <u><b>August 15</b></u><br>&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;Three categories include <b>Personal Narrative</b>, <b>Original Poem</b>, and <b>Persuasive Essay</b><br>&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;Get a chance to win <b><u>prizes</u></b>!<br><br><span style="text-transform: uppercase;font-size: 1.5rem;">Not confident in your writing?</span><br>&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;We are holding a writing workshop virtually on <u><b>July 20th at 7PM!</b></u><br><a href="https://us06web.zoom.us/j/84253500389?pwd=cXd6a2Nrbk9KVHAyV21xekhOMlJGZz09">Zoom link can be found here!</a><br><br>Click below to learn important details!<br><br><a href="https://docs.google.com/presentation/d/1A6im8yvSVC5uIo4PwvoXVp6sKRteR4NBTP0wCPPtXU8" target="_blank" class="a-btn-inverse">Information Slides</a></p1>
                             </div>
                         </div>
                     </div>
@@ -148,6 +148,31 @@
                 </div>
             </footer>
         </div>
+        <div id="myPopup" class="popup">
+            <div class="pbg"></div>
+            <div class="popup-header">
+              Leaders in Literacy Writing Workshop!
+              <span class="close toggle" data-target="myPopup">close</span>
+            </div>
+            <div class="popup-body">
+                Join us for our writing workshop on July 20th at 7pm!
+                <br>
+                <br>
+                <a href="https://us06web.zoom.us/j/84253500389?pwd=cXd6a2Nrbk9KVHAyV21xekhOMlJGZz09" style="color: black;">Zoom link</a>
+            </div>
+            <div class="popup-footer">
+              <button class="toggle button" data-target="myPopup">Got it !</button>
+            </div>
+          </div>
         <script type='text/javascript' src='scripts/app.js'></script>
+        <script>
+            $(document).on('click', '.toggle', function(event) {
+                event.preventDefault();
+                
+                var target = $(this).data('target');
+                $('#' + target).toggleClass('hide');
+                $('#').toggleClass('hide');
+            });
+        </script>
     </body>
 </html>

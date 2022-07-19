@@ -99,9 +99,9 @@
                                 <h1 class="h1 o-two-columns-text__heading" style="font-size: 3rem">Oliver</h1>
                                 <h2 class="ourteamdesc h1 o-two-columns-text__heading">About Me</h2>
                             </div>
-                            <div class="col-md-6 offset-xl-1" style="text-align: center;align-items: center;">
+                            <div class="col-md-6 col-xl-4 offset-xl-1" style="text-align: center;align-items: center;">
                                 <img class="ourteampfp h1 o-two-columns-text__heading" src="https://icon-library.com/images/no-profile-picture-icon-female/no-profile-picture-icon-female-24.jpg" alt="">
-                                <h1 class="h1 o-two-columns-text__heading" style="font-size: 3rem">Katherine</h1>
+                                <h1 class="h1 o-two-columns-text__heading" style="font-size: 3rem">Edwin</h1>
                                 <h2 class="ourteamdesc h1 o-two-columns-text__heading">About Me</h2>
                             </div>
                         </div>
@@ -111,31 +111,18 @@
                         <div class="row">
                             <div class="col-md-6 col-xl-4 offset-xl-1" style="text-align: center;align-items: center;">
                                 <img class="ourteampfp h1 o-two-columns-text__heading" src="https://icon-library.com/images/no-profile-picture-icon-female/no-profile-picture-icon-female-24.jpg" alt="">
-                                <h1 class="h1 o-two-columns-text__heading" style="font-size: 3rem">Edwin</h1>
+                                <h1 class="h1 o-two-columns-text__heading" style="font-size: 3rem">Alex</h1>
                                 <h2 class="ourteamdesc h1 o-two-columns-text__heading">About Me</h2>
                             </div>
                             <div class="col-md-6 offset-xl-1" style="text-align: center;align-items: center;">
                                 <img class="ourteampfp h1 o-two-columns-text__heading" src="https://icon-library.com/images/no-profile-picture-icon-female/no-profile-picture-icon-female-24.jpg" alt="">
-                                <h1 class="h1 o-two-columns-text__heading" style="font-size: 3rem">Alex</h1>
+                                <h1 class="h1 o-two-columns-text__heading" style="font-size: 3rem">Aahil</h1>
                                 <h2 class="ourteamdesc h1 o-two-columns-text__heading">About Me</h2>
                             </div>
                         </div>
                     </div>
                 </section><section class="o-two-columns-text section" style="background-image: linear-gradient(180deg, #111C1E 0%, #000000 100%);" >
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 col-xl-4 offset-xl-1" style="text-align: center;align-items: center;">
-                                <img class="ourteampfp h1 o-two-columns-text__heading" src="https://icon-library.com/images/no-profile-picture-icon-female/no-profile-picture-icon-female-24.jpg" alt="">
-                                <h1 class="h1 o-two-columns-text__heading" style="font-size: 3rem">Aahil</h1>
-                                <h2 class="ourteamdesc h1 o-two-columns-text__heading">About Me</h2>
-                            </div>
-                            <div class="col-md-6 offset-xl-1" style="text-align: center;align-items: center;">
-                                <img class="ourteampfp h1 o-two-columns-text__heading" src="https://icon-library.com/images/no-profile-picture-icon-male/no-profile-picture-icon-female-24.jpg" alt="">
-                                <h1 class="h1 o-two-columns-text__heading" style="font-size: 3rem">Edward</h1>
-                                <h2 class="ourteamdesc h1 o-two-columns-text__heading">About Me</h2>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </section>
                 <section class="o-contact section" id="home " style="background-image: linear-gradient(180deg, #000000 0%, #000000 100%);">
                     <div class="o-contact__inner">
@@ -162,6 +149,31 @@
                 </div>
             </footer>
         </div>
+        <div id="myPopup" class="popup">
+            <div class="pbg"></div>
+            <div class="popup-header">
+              Leaders in Literacy Writing Workshop!
+              <span class="close toggle" data-target="myPopup">close</span>
+            </div>
+            <div class="popup-body">
+                Join us for our writing workshop on July 20th at 7pm!
+                <br>
+                <br>
+                <a href="https://us06web.zoom.us/j/84253500389?pwd=cXd6a2Nrbk9KVHAyV21xekhOMlJGZz09" style="color: black;">Zoom link</a>
+            </div>
+            <div class="popup-footer">
+              <button class="toggle button" data-target="myPopup">Got it !</button>
+            </div>
+          </div>
         <script type='text/javascript' src='scripts/app.js'></script>
+        <script>
+            $(document).on('click', '.toggle', function(event) {
+                event.preventDefault();
+                
+                var target = $(this).data('target');
+                $('#' + target).toggleClass('hide');
+                $('#').toggleClass('hide');
+            });
+        </script>
     </body>
 </html>
